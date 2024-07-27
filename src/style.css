@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: 0;
+  background: transparent;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -262,6 +269,7 @@ body {
 }
 
 .follow-us .section__pre-title {
+  margin-top: 4px;
   font-weight: 400;
 }
 
@@ -283,7 +291,7 @@ body {
 }
 
 .follow-us .section__content {
-  padding: 198px 0;
+  padding: 194px 0;
 }
 
 .follow-us .section__text {
@@ -322,4 +330,120 @@ body {
 .follow-us__socials {
   display: flex;
   gap: 16px;
+}
+
+.products {
+  padding-bottom: 74px;
+}
+
+.products__slider {
+  display: flex;
+  gap: 32px;
+}
+
+.products__item {
+  width: 480px;
+}
+
+.products__item__image {
+  background-color: var(--primary-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 450px;
+  width: 100%;
+}
+
+.products__item__content {
+  padding: 18px 0;
+}
+
+.products__item__title {
+  height: 29px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.035em;
+}
+
+.products__item__text {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.products__item__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.products__item__info__section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.products__item__price {
+  height: 24px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-shadow: 0px 2px 0px #f9efe0;
+}
+
+.products__item__type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 10px;
+  height: 40px;
+  background: rgba(207, 140, 11, 0.1);
+  border-radius: 64px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.products__item__count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 16px;
+  height: 40px;
+
+  background: rgba(207, 140, 11, 0.1);
+  border-radius: 64px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.products__item__count__button {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  height: 56px;
+  background: rgba(207, 140, 11, 0.1);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 0px #f9efe0;
 }
