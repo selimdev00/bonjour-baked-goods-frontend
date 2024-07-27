@@ -59,13 +59,18 @@ body {
 }
 
 .header__logo {
-  background: var(--primary-100);
   padding: 10px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 128px;
   height: 128px;
+  background: linear-gradient(
+      0deg,
+      rgba(207, 140, 11, 0.1),
+      rgba(207, 140, 11, 0.1)
+    ),
+    #f9efe0;
 }
 
 .header__nav {
@@ -206,4 +211,20 @@ body {
   font-size: 20px;
   line-height: 28px;
   text-shadow: 2px 2px 0px #f9efe0;
+}
+
+.hero__bg-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero__bg-image {
+  position: absolute;
+  object-fit: contain;
+  height: auto;
 }
