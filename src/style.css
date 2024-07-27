@@ -446,6 +446,7 @@ body {
 }
 
 .products__item__cart__button {
+  cursor: pointer;
   margin-top: 12px;
   display: flex;
   justify-content: center;
