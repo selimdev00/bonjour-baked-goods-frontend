@@ -2,6 +2,7 @@
 
 :root {
   --primary-100: #f9efe0;
+  --primary: #cf8c0b;
   --text: #231f20;
 }
 
@@ -31,9 +32,17 @@ body {
   font-family: "Lusitana", monospace;
 }
 
+.font-garamond {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
 .header {
   background: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -121,4 +130,80 @@ body {
   position: absolute;
   top: 0;
   mix-blend-mode: overlay;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  padding-top: 250px;
+  text-align: center;
+}
+
+.hero__pre-title {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.035em;
+  text-align: center;
+  gap: 12px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 16px;
+    height: 1px;
+    background: var(--primary);
+    display: block;
+  }
+}
+
+.hero__title {
+  margin-top: 12px;
+  font-weight: 500;
+  width: 716px;
+  height: 192px;
+  font-style: normal;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: -0.035em;
+}
+
+.hero__text {
+  margin-top: 32px;
+  width: 706px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hero__button {
+  margin-top: 32px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 12px;
+  height: 60px;
+  background: rgba(207, 140, 11, 0.1);
+  border: 1px solid #cf8c0b;
+  font-family: inherit;
+}
+
+.hero__button__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-shadow: 2px 2px 0px #f9efe0;
 }
