@@ -29,7 +29,7 @@ body {
 }
 
 .font-lusitana {
-  font-family: "Lusitana", monospace;
+  font-family: "Lusitana", serif;
 }
 
 .font-garamond {
@@ -75,7 +75,6 @@ body {
 .section__title {
   margin-top: 12px;
   font-weight: 500;
-  width: 716px;
   font-style: normal;
   font-size: 96px;
   line-height: 96px;
@@ -89,6 +88,34 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+.order-button {
+  height: 48px;
+  display: block;
+  cursor: pointer;
+  transform: rotate(-90deg) translateY(calc(50% + 34px));
+  position: absolute;
+  top: 210px;
+  right: 0;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background: transparent;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: rgba(207, 140, 11, 0.2);
+}
+
+.order-button__inner {
+  color: var(--primary);
+  padding: 16px;
+  height: 100%;
+  display: block;
+  background: rgba(207, 140, 11, 0.2);
 }
 
 .header {
@@ -178,6 +205,10 @@ body {
   background: linear-gradient(107.15deg, var(--primary-100) 0%, #ded3c1 100%);
 }
 
+.hero .section__title {
+  width: 716px;
+}
+
 .hero__noise {
   width: 100%;
   height: 100%;
@@ -233,6 +264,23 @@ body {
 
 .follow-us .section__pre-title {
   font-weight: 400;
+}
+
+.follow-us .section__title {
+  position: relative;
+  display: inline-flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 103%;
+    height: 32px;
+    background: var(--primary-100);
+    left: 50%;
+    bottom: 0;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: -1;
+  }
 }
 
 .follow-us .section__content {
