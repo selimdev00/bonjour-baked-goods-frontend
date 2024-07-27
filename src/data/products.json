@@ -3,12 +3,14 @@
     "id": 1,
     "title": "Pain au Cranberry",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
-    "price": 12
+    "price": 12,
+    "types": ["Pack of 2", "Pack of 4"]
   },
   {
     "id": 2,
     "title": "Pain au Cranberry 2",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
-    "price": 15
+    "price": 15,
+    "types": ["Pack of 3", "Pack of 6"]
   }
 ]

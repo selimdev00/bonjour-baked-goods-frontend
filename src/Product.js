@@ -15,6 +15,7 @@ export default class Product {
     this.render();
     this.setCounter();
     this.setCartHandler();
+    this.setType();
   }
 
   render() {
@@ -36,10 +37,11 @@ export default class Product {
 
                 <div class="products__item__info">
                    <div class="products__item__info__section">
-                    <button class="products__item__type">
+                    <div class="products__item__type">
                       <span>Pack of 6</span>
 
                       <svg
+                        class="products__item__type__icon"
                         width="12"
                         height="8"
                         viewBox="0 0 12 8"
@@ -52,7 +54,16 @@ export default class Product {
                           stroke-width="2"
                         />
                       </svg>
-                    </button>
+                      
+                      <ul class="products__item__type__dropdown">
+                        ${this.product.types
+                          .map(
+                            (type) =>
+                              `<li class="products__item__type__dropdown__item">${type}</li>`,
+                          )
+                          .join("")}
+                      </ul>
+                    </div>
 
                     <div class="products__item__count">
                       <button class="products__item__count__button">
@@ -140,7 +151,7 @@ export default class Product {
     );
 
     subtractButton.addEventListener("click", () => {
-      if (this.count > 0) {
+      if (this.count > 1) {
         this.count = this.count - 1;
         counter.textContent = this.count;
       }
@@ -163,5 +174,26 @@ export default class Product {
       userCart.add();
       cartButton.querySelector("span").textContent = "Remove from cart";
     });
+  }
+
+  setType() {
+    const type = this.productNode.querySelector(".products__item__type");
+    const dropdown = type.querySelector(".products__item__type__dropdown");
+    dropdown.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+
+    type.addEventListener("click", () => {
+      type.classList.toggle("active");
+    });
+
+    for (const node of dropdown.querySelectorAll(
+      ".products__item__type__dropdown__item",
+    )) {
+      node.addEventListener("click", () => {
+        type.querySelector("span").textContent = node.textContent;
+        type.classList.remove("active");
+      });
+    }
   }
 }
