@@ -98,12 +98,10 @@ body {
   position: absolute;
   top: 210px;
   right: 0;
-  white-space: nowrap;
   letter-spacing: 0.1em;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-
   background: transparent;
   border-width: 2px;
   border-style: dashed;
