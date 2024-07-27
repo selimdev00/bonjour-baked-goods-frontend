@@ -33,6 +33,7 @@ body {
   width: 100%;
   max-width: 1670px;
   margin: 0 auto;
+  padding: 0 14px;
 }
 
 .font-lusitana {
@@ -418,7 +419,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
   gap: 16px;
   height: 40px;
 
@@ -433,6 +433,19 @@ body {
 }
 
 .products__item__count__button {
+  cursor: pointer;
+  padding: 8px 16px;
+
+  &:first-of-type {
+    padding-right: 0;
+  }
+
+  &:last-of-type {
+    padding-left: 0;
+  }
+}
+
+.products__item__cart__button {
   margin-top: 12px;
   display: flex;
   justify-content: center;
