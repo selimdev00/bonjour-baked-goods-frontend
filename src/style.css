@@ -172,6 +172,7 @@ body {
   border: 2px dashed white;
   margin: 14px 28px;
   font-size: 20px;
+  display: flex;
 }
 
 .header__cart__inner {
