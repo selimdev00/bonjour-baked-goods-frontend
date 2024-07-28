@@ -1,4 +1,4 @@
-# Bonjour
+# Bonjour 🇫🇷🥖🗼🥐🇪🇺🏰
 
 This is simple landing for bakery goods website, written in just HTML, CSS, Javascript
 
