@@ -12,5 +12,26 @@
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
     "price": 15,
     "types": ["Pack of 3", "Pack of 6"]
+  },
+  {
+    "id": 3,
+    "title": "Pain au Cranberry 3",
+    "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
+    "price": 18,
+    "types": ["Pack of 1", "Pack of 5"]
+  },
+  {
+    "id": 4,
+    "title": "Pain au Cranberry 4",
+    "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
+    "price": 18,
+    "types": ["Pack of 1", "Pack of 5"]
+  },
+  {
+    "id": 5,
+    "title": "Pain au Cranberry 4",
+    "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
+    "price": 18,
+    "types": ["Pack of 1", "Pack of 5"]
   }
 ]
