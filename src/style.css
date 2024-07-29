@@ -33,9 +33,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1670px;
+  max-width: 1700px;
   margin: 0 auto;
-  padding: 0 14px;
+  padding: 0 15px;
 }
 
 .font-lusitana {
@@ -340,7 +340,7 @@ body {
   gap: 32px;
   overflow: hidden;
   overflow-x: auto;
-  margin-top: 32px;
+  margin-top: 2s2px;
   position: relative;
   width: 100%;
   font-size: 0;
