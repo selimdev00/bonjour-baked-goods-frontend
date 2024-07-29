@@ -4,34 +4,39 @@
     "title": "Pain au Cranberry",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
     "price": 12,
-    "types": ["Pack of 2", "Pack of 4"]
+    "types": ["Pack of 2", "Pack of 4"],
+    "imageUrl": "/product-image-1.png"
   },
   {
     "id": 2,
     "title": "Pain au Cranberry 2",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
     "price": 15,
-    "types": ["Pack of 3", "Pack of 6"]
+    "types": ["Pack of 3", "Pack of 6"],
+    "imageUrl": "/product-image-2.png"
   },
   {
     "id": 3,
     "title": "Pain au Cranberry 3",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
     "price": 18,
-    "types": ["Pack of 1", "Pack of 5"]
+    "types": ["Pack of 1", "Pack of 5"],
+    "imageUrl": "/product-image-1.png"
   },
   {
     "id": 4,
     "title": "Pain au Cranberry 4",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
     "price": 18,
-    "types": ["Pack of 1", "Pack of 5"]
+    "types": ["Pack of 1", "Pack of 5"],
+    "imageUrl": "/product-image-2.png"
   },
   {
     "id": 5,
     "title": "Pain au Cranberry 4",
     "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal fruits.",
     "price": 18,
-    "types": ["Pack of 1", "Pack of 5"]
+    "types": ["Pack of 1", "Pack of 5"],
+    "imageUrl": "/product-image-1.png"
   }
 ]

@@ -23,7 +23,7 @@ export default class Product {
     const html = `
             <div data-product="${this.product.id}" class="products__item">
               <div class="products__item__image">
-                <img src="../images/product-image-1.png" alt="product" />
+                <img src="${this.product.imageUrl}" alt="product" />
               </div>
 
               <div class="products__item__content">
