@@ -127,17 +127,24 @@ body {
 }
 
 .header {
-  background: transparent;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
+  transition: background-color 0.3s ease-in-out;
+
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease-in-out;
+  }
 }
 
 .header .container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 
 .header__section {
@@ -153,6 +160,8 @@ body {
   height: 128px;
   background: linear-gradient(0deg, var(--primary-50), var(--primary-50)),
     var(--primary-100);
+  position: absolute;
+  left: 12px;
 }
 
 .header__nav {
@@ -160,8 +169,8 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 48px;
-  margin-left: 48px;
+  gap: 50px;
+  margin-left: 174px;
 }
 
 .header__nav__item {
